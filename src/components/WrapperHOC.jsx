@@ -6,7 +6,7 @@ const WrapperHOC = (WrapperFunciton)=>{
         const [counter, setCounter] = useState(0)
 
         const handleCounter = ()=>{
-            setCounter(counter+1)
+            setCounter(prevCount => prevCount+1)
         }
 
         return(
